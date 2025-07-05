@@ -1,0 +1,127 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILIZAÇÃO GERAL DA PÁGINA */
+body {
+  background-color: #527499;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  text-align: left; /* Melhor para leitura */
+}
+
+/* ESTILIZAÇÃO MENU */
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.menu li a:hover {
+  border: 1px solid white;
+  background-color: #3d5c74;
+}
+
+.menu li a.active {
+  background-color: #2e4a60;
+  border: 1px solid white;
+  cursor: default;
+}
+
+/* ESTILIZAÇÃO TÍTULO */
+h2 {
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* ESTILIZAÇÃO PÁGINA SOBRE */
+ul:not(.menu) {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+ul:not(.menu) li {
+  border: 2px solid #47617c;
+  padding: 10px;
+  background-color: #47617c;
+  color: #f4f4f4;
+  width: 250px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+ul:not(.menu) li:hover {
+  background-color: #ffffff;
+  color: #000005;
+  border: 2px solid #ffffff;
+}
+
+/* Caso você use essas classes no HTML, senão remova */
+.Python img,
+.Banco img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.Python p,
+.Banco p {
+  text-align: left;
+}
+
+.Python strong,
+.Banco strong {
+  margin-right: 10px;
+}
+
+.certificado {
+  font-style: italic;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  ul:not(.menu) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  ul:not(.menu) li {
+    width: 100%;
+  }
+}
+
+/* FORMULÁRIO CONTATO */
+#contactForm {
+  max-width: 600px;
+  width: 90%;
+  border: 2px solid #47617c;
+  background-color: #47617c;
+  padding: 50px;
+  margin: 80px auto;
+  text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!--Declara o tipo do documento-->
+<html lang="pt"> <!--Define o idioma da pagina-->
+<head>
+  <meta charset="UTF-8" /> <!-- Permissão de acentuação e caracteres especiais-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsividade -->
+  <title>Meu Portfólio - Contato</title>
+  <meta name="description" content="Formulário de contato do portfólio de Érica Cristina." />
+  <meta name="keywords" content="contato, portfólio, Érica Cristina" />
+  <meta name="author" content="Érica Cristina" />
+  <link rel="stylesheet" href="css/style.css" /> <!-- Link para o CSS principal -->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="home.html">Início</a></li> <!-- Link para página inicial -->
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html" class="active">Contato</a></li> <!-- Link ativo na página atual -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Formulário para validação via JavaScript -->
+    <form id="contactForm" novalidate>
+      <label for="nome">Nome:</label><br />
+      <input type="text" id="nome" name="nome" required /><br /><br />
+
+      <label for="email">E-mail:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="mensagem">Mensagem:</label><br />
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br /><br />
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="formMessage"></p> <!-- Espaço para mensagem -->
+  </main>
+
+  <script src="js/script.js"></script> <!-- Script para validação do formulário -->
+</body>
+</html>
