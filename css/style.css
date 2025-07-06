@@ -5,16 +5,16 @@
   box-sizing: border-box;
 }
 
-/* ESTILIZAÇÃO GERAL DA PÁGINA */
+/* ESTILIZAÇÃO GERAL DA PAGINA */
 body {
   background-color: #527499;
   color: #ffffff;
   font-family: Arial, sans-serif;
-  padding: 30px;
-  text-align: left;
+  margin: 30px;
+  text-align: justify;
 }
 
-/* ESTILIZAÇÃO MENU */
+/* ESTILIZAÇÃO MENU*/
 .menu {
   list-style-type: none;
   display: flex;
@@ -44,14 +44,14 @@ body {
   cursor: default;
 }
 
-/* ESTILIZAÇÃO TÍTULO */
+/* ESTILIZAÇÃO TITULO */
 h2 {
   font-family: Arial, sans-serif;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-/* ESTILIZAÇÃO PÁGINA SOBRE */
+/* ESTILIZAÇAO PAGINA SOBRE */
 ul:not(.menu) {
   list-style-type: none;
   padding: 0;
@@ -67,16 +67,22 @@ ul:not(.menu) li {
   color: #f4f4f4;
   width: 250px;
   text-align: center;
-  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 ul:not(.menu) li:hover {
   background-color: #ffffff;
   color: #000005;
-  border: 2px solid #ffffff;
+  border: #ffffff;
 }
 
-/* Caso você use essas classes no HTML, senão remova */
+.habilidades,
+.Python,
+.Banco {
+  gap: 5px;
+}
+
+.habilidades img,
 .Python img,
 .Banco img {
   width: 50px;
@@ -84,11 +90,13 @@ ul:not(.menu) li:hover {
   vertical-align: middle;
 }
 
+.habilidades p,
 .Python p,
 .Banco p {
   text-align: left;
 }
 
+.habilidades strong,
 .Python strong,
 .Banco strong {
   margin-right: 10px;
@@ -98,32 +106,33 @@ ul:not(.menu) li:hover {
   font-style: italic;
 }
 
-/* RESPONSIVIDADE */
-@media (max-width: 1024px) {
+/* RESPONSIViDADE*/
+@media (max-width: 768px) {
   .menu {
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin: 20px 0;
-  }
-
-  .menu li {
-    width: 100%;
+    gap: 10px;
   }
 
   .menu li a {
     display: block;
     width: 100%;
-    padding: 12px 0;
     text-align: center;
-    border-radius: 6px;
-    background-color: #3d5c74;
-  }
-
-  .menu li a:hover {
-    background-color: #2e4a60;
   }
 
   ul:not(.menu) {
     flex-direction: column;
     gap: 20px;
+  }
+
+  ul:not(.menu) li {
+    width: 100%;
+  }
+}
+
+#contactForm {
+    width: 600px;
+    border: 2px solid #47617c;
+    padding: 50px;
+    margin: 80px auto;
+    text-align: center;
+}
