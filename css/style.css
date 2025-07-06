@@ -76,6 +76,7 @@ ul:not(.menu) li:hover {
   border: 2px solid #ffffff;
 }
 
+/* Caso você use essas classes no HTML, senão remova */
 .Python img,
 .Banco img {
   width: 50px;
@@ -98,19 +99,23 @@ ul:not(.menu) li:hover {
 }
 
 /* RESPONSIVIDADE */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .menu {
     flex-direction: column;
-    gap: 10px;
     align-items: center;
-    padding-left: 0;
+    gap: 15px;
+    margin: 20px 0;
+  }
+
+  .menu li {
+    width: 100%;
   }
 
   .menu li a {
     display: block;
     width: 100%;
+    padding: 12px 0;
     text-align: center;
-    padding: 10px;
     border-radius: 6px;
     background-color: #3d5c74;
   }
@@ -122,20 +127,3 @@ ul:not(.menu) li:hover {
   ul:not(.menu) {
     flex-direction: column;
     gap: 20px;
-  }
-
-  ul:not(.menu) li {
-    width: 100%;
-  }
-}
-
-/* FORMULÁRIO CONTATO */
-#contactForm {
-  max-width: 600px;
-  width: 90%;
-  border: 2px solid #47617c;
-  background-color: #47617c;
-  padding: 50px;
-  margin: 80px auto;
-  text-align: center;
-}
